@@ -1,0 +1,32 @@
+<main class="main">
+<div class="swipe-parent" (swipeleft)="onSwipeLeft($event)"
+(swiperight)="onSwipeRight($event)">
+  <div class="swipe-child">
+    <h1>Swipe Gesture</h1>
+    <p [innerHTML]="gestureTypeForSwipe"></p>
+  </div>
+</div>
+<div class="refresh-parent" (swipedown)="onSwipeDown($event)">
+  <div class="refresh-child">
+    <h1>Refresh Gesture</h1>
+    <!-- <p [innerHTML]="gestureTypeForRefresh"></p> -->
+    <div *ngFor="let val of refreshVal">
+      <p> {{ val }}</p>
+    </div>
+    
+  </div>
+  <div class="add-btn">
+    <input #item type="text" (keyup.enter)="addItem(item.value)">
+    <button (click)="addItem(item.value)">Add</button>
+    </div>
+</div>
+
+</main>
+
+<fusioncharts
+  [type]="type"
+  [width]="width"
+  [height]="height"
+  [dataSource]="dataSource"
+>
+</fusioncharts>

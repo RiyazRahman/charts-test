@@ -1,0 +1,84 @@
+.main {
+    display: flex;
+}
+.swipe-parent {
+    display: grid;
+    place-items: center;
+    background: lightblue;
+    width: 500px;
+    height: 500px;
+    resize: both;
+    overflow: auto;
+    margin:10px;
+}
+  
+.swipe-child {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid red;
+    background: lightpink;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.refresh-parent {
+    display: grid;
+    place-items: center;
+    background: lightblue;
+    width: 500px;
+    height: 500px;
+    resize: both;
+    overflow: auto;
+    margin:10px;
+}
+
+.refresh-child {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid red;
+    background: lightpink;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h1, p {
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none;   /* Firefox all */
+    -ms-user-select: none;  /* IE 10+ */
+     user-select: none; 
+}
+
+.add-btn {
+    display: inline-flex;
+}
+#frame{
+  width: 160px;
+  height: 70px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+#main-title {
+width: 140px;
+  height: 12px;
+  font-family: GTWalsheimPro;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #8495a6;
+}
+#value-title {
+    width: 140px;
+  height: 20px;
+  font-family: GTWalsheimPro;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.1px;
+  color: #2c4258;
+}
